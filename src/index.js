@@ -4,7 +4,7 @@ const getPalindrome = (num) => {
             .split('')
             .reverse()
             .join('');
-    if (num === numReverse) return console.log(numReverse); //eslint-disable-line no-console
+    if (num === numReverse) return numReverse; //eslint-disable-line no-console
     else {
         getPalindrome(num + numReverse);
     }
